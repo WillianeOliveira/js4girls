@@ -99,27 +99,46 @@ background-color: pink;
 	src="http://s2.glbimg.com/6t8D4ClvsSSM0KGhh0gzxswJiCM=/300x225/s.glbimg.com/jo/g1/f/original/2013/11/06/mega3.jpg"
 	alt="MEGASENA">
 <h4>Comentários:</h4>
-<br><input type="text"/></br> <button> Enviar </button>
+<br><input type="text"/></br> <button onClick="exibirAlerta()"> Enviar </button>
+
 	</article>
 </section>
-<aside>
+<aside id="menulateral">
 
 	<ul>	
 	<li><strong>Nome da Premiada:</strong> Williane Oliveira</li>
 	<li><strong>Idade: </strong>18</li>
 	<li><strong>Altura: </strong>1,80</li>
 	</ul>
+</aside>
 
-	<h2> Culinária! </h2>
+	<h2> Culinária </h2>
 	<video src="http://s2.glbimg.com/6t8D4ClvsSSM0KGhh0gzxswJiCM=/300x225/s.glbimg.com/jo/g1/f/original/2013/11/06/mega3.mp4"controls/>
 	
         <article><h4> Comentários </h4>
 	<input type="text"/>
 	<button> Enviar </button>
+<ol id=
 </article>
 </aside>
 <footer>
 Todos os direitos reservados.
 </footer>
+
+<script type="javascript">
+
+var exibirAlerta = function (e) {
+	var comentario = document.getElementarById ("comentario").value;
+	var comentarios = document.getElementarById ("comentarios");
+	var stringComments="";
+
+	arrayComentarios.forEach(funtion(c) {
+		stringComments += "<li>" + c + "</li>";
+	});
+
+	comentarios.innerHTML = comentarios;
+};
+
+</script>
 </body>
 </html>
